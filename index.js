@@ -43,5 +43,13 @@ const game = () => {
     for (let i = 1; i < 6; i++) {
         console.log(playRound(prompt().toUpperCase(), getComputerChoice()));
     }
+    if (winCount > loseCount) {
+        console.log("You won!");
+    } 
+    else if (winCount < loseCount) {
+        console.log("You lose!");
+    } else {
+        console.log("Its a tie!");
+    }
 }
 console.log(game())
