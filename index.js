@@ -33,4 +33,9 @@ const playRound = (playerSelection, computerSelection) => {
         }
     }
 }
-console.log(playRound(playerSelection, computerSelection))
+const game = () => {
+    for (let i = 1; i < 6; i++) {
+        console.log(playRound(prompt().toUpperCase(), getComputerChoice()));
+    }
+}
+console.log(game())
