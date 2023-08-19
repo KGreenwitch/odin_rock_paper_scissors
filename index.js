@@ -8,8 +8,6 @@ const getComputerChoice = () => {
         return "SCISSORS";
     }
 }
-let playerSelection = prompt().toUpperCase();
-let computerSelection = getComputerChoice();
 
 const playRound = (playerSelection, computerSelection) => {
     if (playerSelection === computerSelection) {
